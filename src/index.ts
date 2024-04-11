@@ -1,11 +1,14 @@
 import dotenv from "dotenv";
 import { app } from "./app";
 import connectDB from "./db/index";
+import logger from "./logger/winston.logger"
+
 
 dotenv.config({
     path: './.env'
 });
 
+logger.info("information log")
 
 
 connectDB()
@@ -14,10 +17,12 @@ connectDB()
             console.log(`Server is running at port : ${process.env.PORT}`);
         });
         app.on("error", (err) => {
-            console.error("Server error: ", err);
+            logger.error("Server error: ", err);
         });
+
+        
     })
 
     .catch((err) => {
-        console.error(`mongoDB connection failed: ${err.message}`);
+        logger.error(`mongoDB connection failed: ${err.message}`);
     })
