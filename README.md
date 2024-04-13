@@ -60,12 +60,7 @@ Before running the application, ensure you have the following installed:
     The API is now running and can be accessed at [http://localhost:PORT](http://localhost:). You can use tools like Postman or cURL to interact with the endpoints.
 
 
-## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
 
 ## API Endpoints
 all Api - endpoints are mentioned in the postman-collection.json
@@ -92,8 +87,9 @@ all Api - endpoints are mentioned in the postman-collection.json
     ```bash
     docker run -d -p <machine_port>:<docker_port> --name nodejs-app nodejs-app
     ```
-
 ## Contributing
 
-Contributions are welcome! Please feel free to open an issue or submit a pull request.
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
 
+Please make sure to update tests as appropriate.
