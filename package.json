@@ -4,7 +4,8 @@
   "description": "This is a dummy REST API using typescript",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "build": "tsc"
   },
   "author": "Ariyaman Debnath",
   "license": "ISC",
